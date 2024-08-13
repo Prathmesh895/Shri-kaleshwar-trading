@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 async function ConnectDB() {
     try {
-        await mongoose.connect(process.env.MONGO_URL);
+        await mongoose.connect('mongodb+srv://prathmesh:31LaZ7rVrNY5kOl0@mern-crud.ibpyshr.mongodb.net/bookapp?retryWrites=true&w=majority&appName=mern-crud');
         console.log("Connected to DataBase");
         return true;
     } catch (error) {
