@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { API } from '../https'
 
 function AddBook() {
-    console.log(API)
     const [title, setTitle] = useState('');
     const [image, setImage] = useState(null); // Initialize as null to handle file upload
     const [loading, setLoading] = useState(false);
