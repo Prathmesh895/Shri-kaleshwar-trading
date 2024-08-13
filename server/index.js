@@ -7,7 +7,11 @@ require('dotenv').config();
 const bookRoute = require('./router/book')
 
 app.use(express.json());
-app.use(cors());
+
+app.use(cors({
+    origin: "http://localhost:5173/",
+    credentials: true,
+}));
 
 
 app.use("/books", bookRoute);
@@ -21,3 +25,6 @@ ConnectDB();
 app.listen(port, () => {
     console.log(`server is listening at http://localhost:${port}`);
 })
+
+
+module.exports = app;
