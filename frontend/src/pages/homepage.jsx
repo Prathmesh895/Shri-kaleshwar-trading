@@ -20,7 +20,6 @@ export default function Homepage() {
           </h2>
         </div>
       </div>
-      <Footer />
     </main>
   </>
   );
