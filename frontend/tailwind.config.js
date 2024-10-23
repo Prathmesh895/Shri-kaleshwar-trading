@@ -13,7 +13,17 @@ export default {
         "2xl": "1400px",
       },
     },
-    extend: {},
+    extend: {
+      colors: {
+        "redtxt": '#e11d48',
+        "greenCustom": '#5AFF80',
+        "yellow": '#ffc107',
+        "blue": '#007bff',
+        "gold": "#ffd700",
+        "pink1": "#c30cfa",
+        // "green": '#25d366'
+      },
+    },
   },
   plugins: [],
 }

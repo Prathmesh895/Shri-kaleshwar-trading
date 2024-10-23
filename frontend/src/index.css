@@ -7,5 +7,9 @@ body{
 }
 
 input{
-    @apply border p-1.5 ;
+    @apply border p-2 rounded ;
+}
+
+button{
+    @apply bg-greenCustom border  p-2 text-black hover:dark:bg-black hover:dark:text-white rounded hover:bg-white  hover:border-greenCustom
 }
